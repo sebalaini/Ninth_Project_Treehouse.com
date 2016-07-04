@@ -1,0 +1,29 @@
+/***************
+GENERAL
+***************/
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 100%;
+	color: $white;
+}
+
+main {
+	padding-left: 80px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 35px;
+	height: 35px;
+}

@@ -1,0 +1,32 @@
+/***************
+LOGO
+***************/
+
+.logo {
+	color: $white;
+}
+
+.bold {
+	@include mobile {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	@include tablet {
+		font-size: 1.6em;
+	}
+}
+
+.light {
+	@include mobile {
+		font-size: 0.7em;
+		font-weight: light;
+	}
+	@include tablet {
+		font-size: 1em;	
+	}
+}
+
+body,
+h1 {
+	color: $grey;
+}

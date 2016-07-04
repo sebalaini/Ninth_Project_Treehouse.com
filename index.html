@@ -2,25 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sebastiano Laini's</title>
+  <title>Sebastiano Laini's Web Inspector</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-<body>
-
-  <header>
-
-  </header>
-
-   
-  <footer>
+  <div id="wrapper">
+    
+    <header>
+      <a class="logo" href="index.html"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
+        
+        <ul class="main_nav">
+          <li class="notifications"><a href="#"></a></li>
+          <li class="profile"><a href=""></a></li>
+          <li class="name">Sebastiano Laini</li>
+        </ul>
+    </header>
+  
+  <body>    
+    <ul class="left_nav">
+      <li class="active dashboard"><a href="#"></a></li>
+      <li class="members"><a href="#"></a></li>
+      <li class="visits"><a href="#"></a></li>
+      <li class="settings"><a href="#"></a></li>
+    </ul>
+  
+  <main>
+    <div class="search">
+      <h1>Dashboard</h1>
+        <div class="search_div">
+          <form class="search_form">
+            <div class="search_input">
      
-  </footer>
-    <script src="js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+              <label for="search"></label>
+              <input id="search" type="text" class="search" name="search" value="Search">
+            
+            </div>
+          </form>   
+        </div>
+    <footer>
+     
+    </footer>
+  </main>
+  </div>
+    <script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

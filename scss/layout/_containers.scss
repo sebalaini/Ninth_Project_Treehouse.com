@@ -1,0 +1,53 @@
+/***************
+SEARCH
+***************/
+
+.search {
+	display: inline-block;
+	margin-top: 50px;
+	margin-right: 20px;
+	width: 100%;
+}
+
+.search h1 {
+	@include mobile {
+		float: left;
+		font-size: 1em;
+		margin-top: 30px;
+	}
+	@include tablet{
+		font-size: 1.5em;
+	}
+}
+
+.search_div {
+	@include mobile {
+		width: 60%;
+		float: right;
+	}
+	@include tablet {
+		width: 80%
+	}
+}
+
+input[id="search"] {
+	@include mobile {
+		position: absolute;
+		right: 0;
+		width: 100px;
+		float: right;
+		margin-top: 27px;
+		background: url("../img/icon_search.png") no-repeat;
+		background-position: 75px 3px;
+	}
+	@include tablet {
+		width: 300px;
+		margin-top: 33px;
+		background-position: 275px 3px;
+	}
+}
+
+
+
+
+
