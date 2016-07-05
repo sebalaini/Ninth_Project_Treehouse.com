@@ -30,16 +30,8 @@ NAV
 ***************/
 
 .main_nav {
-	@include mobile {
-		position: relative;
-		top: -50px;
-		right: 0;
-		display: block;
-		float: right;
-	}
-	@include mobile2 {
-		top: 0;
-	}
+	display: block;
+	float: right;
 }
 
 .main_nav,

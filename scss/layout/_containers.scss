@@ -58,17 +58,33 @@ LINEAR CHART
 .linear_chart {
 	width: 100%;
 	margin-top: 20px;
+	text-align: center;
+}
+
+p.traffic {
+	@include mobile {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	@include tablet {
+		width: 100px;
+		float: left;
+	}
 }
 
 .btn_div {
-	display: block;
-	float: right;
-	width: 350px;
-	padding-right: 30px;
-	padding-top: 20px;
+	@include mobile {
+		display: block;
+		width: 100%;
+	}
+	@include tablet {
+		float: right;
+		width: 350px;
+		padding-right: 30px;
+		padding-top: 15px;
+	}
 }
-
-
 
 
 
