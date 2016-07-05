@@ -5,7 +5,6 @@ SEARCH
 .search {
 	display: inline-block;
 	margin-top: 50px;
-	margin-right: 20px;
 	width: 100%;
 }
 
@@ -22,11 +21,13 @@ SEARCH
 
 .search_div {
 	@include mobile {
+		background-color: $light_grey;
 		width: 60%;
 		float: right;
 	}
 	@include tablet {
-		width: 80%
+		width: 82%;
+		height: 80px;
 	}
 }
 
@@ -37,8 +38,10 @@ input[id="search"] {
 		width: 100px;
 		float: right;
 		margin-top: 27px;
+		margin-right: 20px;
 		background: url("../img/icon_search.png") no-repeat;
 		background-position: 75px 3px;
+		background-color: $white;
 	}
 	@include tablet {
 		width: 300px;
@@ -46,6 +49,26 @@ input[id="search"] {
 		background-position: 275px 3px;
 	}
 }
+
+
+/***************
+LINEAR CHART
+***************/
+
+.linear_chart {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.btn_div {
+	display: block;
+	float: right;
+	width: 350px;
+	padding-right: 30px;
+	padding-top: 20px;
+}
+
+
 
 
 

@@ -9,19 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
+<body>
   <div id="wrapper">
-    
-    <header>
-      <a class="logo" href="index.html"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
+     
+  <header>
+    <a class="logo" href="index.html"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
         
-        <ul class="main_nav">
-          <li class="notifications"><a href="#"></a></li>
-          <li class="profile"><a href=""></a></li>
-          <li class="name">Sebastiano Laini</li>
-        </ul>
-    </header>
+      <ul class="main_nav">
+        <li class="notifications"><a href="#"></a></li>
+        <li class="profile"><a href=""></a></li>
+        <li class="name">Sebastiano Laini</li>
+      </ul>
+  </header>
   
-  <body>    
+     
     <ul class="left_nav">
       <li class="active dashboard"><a href="#"></a></li>
       <li class="members"><a href="#"></a></li>
@@ -34,14 +35,32 @@
       <h1>Dashboard</h1>
         <div class="search_div">
           <form class="search_form">
-            <div class="search_input">
      
-              <label for="search"></label>
-              <input id="search" type="text" class="search" name="search" value="Search">
+          <label for="search"></label>
+          <input id="search" type="text" class="search" name="search" placeholder="Search">
             
-            </div>
-          </form>   
-        </div>
+      </form>
+    </div>   
+  </div>
+
+  <div class="linear_chart">
+    <p class="traffic">TRAFFIC</p> 
+      <div class="btn_div">
+        <button type="button" class="hourly">Hourly</button>
+        <button type="button" class="daily">Daily</button>
+        <button type="button" class="weekly">Weekly</button>
+        <button type="button" class="monthly">Monthly</button>
+      </div>
+
+  <canvas></canvas>
+
+
+  </div>
+
+
+
+
+
     <footer>
      
     </footer>
