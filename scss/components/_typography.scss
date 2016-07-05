@@ -1,4 +1,18 @@
 /***************
+GENERAL
+***************/
+
+body,
+h1,
+p {
+	color: $grey;
+}
+
+li {
+	color: $white;
+}
+
+/***************
 LOGO
 ***************/
 
@@ -26,7 +40,36 @@ LOGO
 	}
 }
 
-body,
-h1 {
-	color: $grey;
+
+
+/***************
+HEADER
+***************/
+
+li.name {
+	@include mobile {
+		font-size: 0.8em;
+	}
+	@include mobile2 {
+		font-size: 1em;
+	}
 }
+
+
+
+/***************
+LINEAR CHART
+***************/
+
+.traffic {
+	display: block;
+	width: 100px;
+	float: left;
+}
+
+
+
+
+
+
+

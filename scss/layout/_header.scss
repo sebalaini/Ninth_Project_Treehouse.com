@@ -33,6 +33,7 @@ NAV
 	@include mobile {
 		position: relative;
 		top: -50px;
+		right: 0;
 		display: block;
 		float: right;
 	}
@@ -63,8 +64,11 @@ NAV
 .notifications {
 	background: url("../img/icon_bell.svg") no-repeat center;
 	background-size: 30px 30px;
-	padding-right: 30px;
 	border-right: 2px solid $grey;
+}
+
+li.notifications a {
+	width: 45px;
 }
 
 li.profile {
@@ -73,7 +77,6 @@ li.profile {
 	margin: 0;
 	border-radius: 100%;
 }
-
 
 li.name {
 	position: relative;
