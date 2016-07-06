@@ -4,10 +4,25 @@ LINEAR CHART
 
 button {
 	background: transparent;
-	border: 2px solid $light_grey;
-	border-radius: 10px;
-	width: 70px;
+	width: 75px;
+	height: 30px;
+	border-radius: 15px;
+	border: none;
 	text-align: center;
+	font-weight: normal;
 }
 
+button:hover {
+	border: 2px solid $light_grey;
+	background: $light_green;
+}
 
+button:focus {
+	border: 2px solid $light_grey;
+	background: $light_green;
+}
+
+button.selected {
+	border: 2px solid $light_grey;
+	background: $light_green;
+}
