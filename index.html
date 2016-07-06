@@ -46,14 +46,18 @@
   <div class="linear_chart">
     <p class="traffic">TRAFFIC</p> 
       <div class="btn_div">
-        <button type="button" class="hourly">Hourly</button>
-        <button type="button" class="daily">Daily</button>
-        <button type="button" class="weekly">Weekly</button>
-        <button type="button" class="monthly">Monthly</button>
+        <button type="button" id="hourly">Hourly</button>
+        <button type="button" id="daily">Daily</button>
+        <button type="button" id="weekly">Weekly</button>
+        <button type="button" id="monthly">Monthly</button>
       </div>
 
-  <canvas></canvas>
-
+  <div id="chart" >
+    <canvas id="lineChart_weekly"></canvas>
+    <canvas id="lineChart_hourly"></canvas>
+    <canvas id="lineChart_daily"></canvas>
+    <canvas id="lineChart_monthly"></canvas>
+  </div>
 
   </div>
 
@@ -67,6 +71,7 @@
   </main>
   </div>
     <script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
