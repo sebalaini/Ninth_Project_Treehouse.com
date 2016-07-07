@@ -6,7 +6,6 @@ var $hourly = $('#hourly');
 var $daily = $('#daily');
 var $weekly = $('#weekly');
 var $monthly = $('#monthly');
-
 var $hourlyChart = $('#lineChart_hourly');
 var $dailyChart = $('#lineChart_daily');
 var $weeklyChart = $('#lineChart_weekly');
@@ -33,31 +32,31 @@ CHANGING LINE CHARTS ON CLICK
 ***************/
 
 $hourly.click("on", function(){
-   $hourlyChart.show();
-   $dailyChart.hide();
-   $weeklyChart.hide();
-   $monthlyChart.hide();
+  $hourlyChart.show();
+  $dailyChart.hide();
+  $weeklyChart.hide();
+  $monthlyChart.hide();
 });
 
 $daily.click("on", function(){
-   $hourlyChart.hide();
-   $dailyChart.show();
-   $weeklyChart.hide();
-   $monthlyChart.hide();
+  $hourlyChart.hide();
+  $dailyChart.show();
+  $weeklyChart.hide();
+  $monthlyChart.hide();
 });
 
 $weekly.click("on", function(){
-   $hourlyChart.hide();
-   $dailyChart.hide();
-   $weeklyChart.show();
-   $monthlyChart.hide();
+  $hourlyChart.hide();
+  $dailyChart.hide();
+  $weeklyChart.show();
+  $monthlyChart.hide();
 });
 
 $monthly.click("on", function(){
-   $hourlyChart.hide();
-   $dailyChart.hide();
-   $weeklyChart.hide();
-   $monthlyChart.show();
+  $hourlyChart.hide();
+  $dailyChart.hide();
+  $weeklyChart.hide();
+  $monthlyChart.show();
 });
 
 
@@ -67,31 +66,31 @@ ADDED FUNCIONALITY TO LINE CHART NAVIGATION
 ***************/
 
 $hourly.click("on", function(){
-    $weekly.removeClass( "selected" );
-    $daily.removeClass( "selected" );
-    $monthly.removeClass( "selected" );
-    $hourly.addClass( "selected" );
+  $weekly.removeClass( "selected" );
+  $daily.removeClass( "selected" );
+  $monthly.removeClass( "selected" );
+  $hourly.addClass( "selected" );
 });
 
 $daily.click("on", function(){
-    $weekly.removeClass( "selected" );
-    $hourly.removeClass( "selected" );
-    $monthly.removeClass( "selected" );
-    $daily.addClass( "selected" );
+  $weekly.removeClass( "selected" );
+  $hourly.removeClass( "selected" );
+  $monthly.removeClass( "selected" );
+  $daily.addClass( "selected" );
 });
 
 $weekly.click("on", function(){
-    $hourly.removeClass( "selected" );
-    $daily.removeClass( "selected" );
-    $monthly.removeClass( "selected" );
-    $weekly.addClass( "selected" );
+  $hourly.removeClass( "selected" );
+  $daily.removeClass( "selected" );
+  $monthly.removeClass( "selected" );
+  $weekly.addClass( "selected" );
 });
 
 $monthly.click("on", function(){
-    $weekly.removeClass( "selected" );
-    $hourly.removeClass( "selected" );
-    $daily.removeClass( "selected" );
-    $monthly.addClass( "selected" );
+  $weekly.removeClass( "selected" );
+  $hourly.removeClass( "selected" );
+  $daily.removeClass( "selected" );
+  $monthly.addClass( "selected" );
 });
 
 
@@ -103,22 +102,22 @@ HOURLY
 var lineChart = document.getElementById("lineChart_hourly");
 var myChart = new Chart(lineChart, {
 
-    type: 'line',
+  type: 'line',
     data: {
-        labels: ["00", "02", "03", "04", "06", "08", "10", "12", "14", "16", "18", "20", "22", "24",],
+      labels: ["00", "02", "03", "04", "06", "08", "10", "12", "14", "16", "18", "20", "22", "24",],
         datasets: [{
-            label: 'Traffic',
-            lineTension: 0.2,
-            backgroundColor: 'rgba(96, 96, 205, 0.2)',
-            borderCapStyle: 'square',
-            borderColor: "#6E75DA",
-            pointBorderColor: '#545475',
-            pointBackgroundColor: '#F6F7FF',
-            pointBorderWidth: 1,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            data: [2, 4, 4, 6, 10, 16, 12, 18, 16, 15, 21, 16, 12, 6]
-        }]
+        label: 'Traffic',
+        lineTension: 0.2,
+        backgroundColor: 'rgba(96, 96, 205, 0.2)',
+        borderCapStyle: 'square',
+        borderColor: "#6E75DA",
+        pointBorderColor: '#545475',
+        pointBackgroundColor: '#F6F7FF',
+        pointBorderWidth: 1,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        data: [2, 4, 4, 6, 10, 16, 12, 18, 16, 15, 21, 16, 12, 6]
+      }]
     },
     options: {
         legend: false,
@@ -143,22 +142,22 @@ DAILY
 var lineChart = document.getElementById("lineChart_daily");
 var myChart = new Chart(lineChart, {
 
-    type: 'line',
+  type: 'line',
     data: {
-        labels: ["1", "7", "14", "21", "28", "31"],
+      labels: ["1", "7", "14", "21", "28", "31"],
         datasets: [{
-            label: 'Traffic',
-            lineTension: 0.2,
-            backgroundColor: 'rgba(96, 96, 205, 0.2)',
-            borderCapStyle: 'square',
-            borderColor: "#6E75DA",
-            pointBorderColor: '#545475',
-            pointBackgroundColor: '#F6F7FF',
-            pointBorderWidth: 1,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            data: [70, 50, 86, 110, 60, 40]
-        }]
+        label: 'Traffic',
+        lineTension: 0.2,
+        backgroundColor: 'rgba(96, 96, 205, 0.2)',
+        borderCapStyle: 'square',
+        borderColor: "#6E75DA",
+        pointBorderColor: '#545475',
+        pointBackgroundColor: '#F6F7FF',
+        pointBorderWidth: 1,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        data: [70, 50, 86, 110, 60, 40]
+      }]
     },
     options: {
         legend: false,
@@ -183,22 +182,22 @@ WEEKLY
 var lineChart = document.getElementById("lineChart_weekly");
 var myChart = new Chart(lineChart, {
 
-    type: 'line',
+  type: 'line',
     data: {
-        labels: ["1","5","10","15", "20", "25", "30", "35", "40", "45", "50", "52"],
+      labels: ["1","5","10","15", "20", "25", "30", "35", "40", "45", "50", "52"],
         datasets: [{
-            label: 'Traffic',
-            lineTension: 0.2,
-            backgroundColor: 'rgba(96, 96, 205, 0.2)',
-            borderCapStyle: 'square',
-            borderColor: "#6E75DA",
-            pointBorderColor: '#545475',
-            pointBackgroundColor: '#F6F7FF',
-            pointBorderWidth: 1,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            data: [200, 250, 400, 600, 700, 1000, 1500, 1300, 1000, 900, 1000, 1200]
-        }]
+        label: 'Traffic',
+        lineTension: 0.2,
+        backgroundColor: 'rgba(96, 96, 205, 0.2)',
+        borderCapStyle: 'square',
+        borderColor: "#6E75DA",
+        pointBorderColor: '#545475',
+        pointBackgroundColor: '#F6F7FF',
+        pointBorderWidth: 1,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        data: [200, 250, 400, 600, 700, 1000, 1500, 1300, 1000, 900, 1000, 1200]
+      }]
     },
     options: {
         legend: false,
@@ -223,22 +222,22 @@ MONTHLY
 var lineChart = document.getElementById("lineChart_monthly");
 var myChart = new Chart(lineChart, {
 
-    type: 'line',
+  type: 'line',
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
-            label: 'Traffic',
-            lineTension: 0.2,
-            backgroundColor: 'rgba(96, 96, 205, 0.2)',
-            borderCapStyle: 'square',
-            borderColor: "#6E75DA",
-            pointBorderColor: '#545475',
-            pointBackgroundColor: '#F6F7FF',
-            pointBorderWidth: 1,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            data: [400, 500, 500, 700, 1000, 1500, 1400, 1700, 1350, 900, 700, 900]
-        }]
+        label: 'Traffic',
+        lineTension: 0.2,
+        backgroundColor: 'rgba(96, 96, 205, 0.2)',
+        borderCapStyle: 'square',
+        borderColor: "#6E75DA",
+        pointBorderColor: '#545475',
+        pointBackgroundColor: '#F6F7FF',
+        pointBorderWidth: 1,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        data: [400, 500, 500, 700, 1000, 1500, 1400, 1700, 1350, 900, 700, 900]
+      }]
     },
     options: {
         legend: false,
@@ -256,6 +255,72 @@ var myChart = new Chart(lineChart, {
 
 
 
+/***************
+BAR CHART
+***************/
+
+var barChart = document.getElementById("barChart");
+var myChart2 = new Chart(barChart, {
+    type: "bar",
+    data: {
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
+        datasets: [
+            {
+                label: 'Visited',
+                data: [75, 100, 175, 125, 225, 211, 42],
+                backgroundColor: "rgba(96, 96, 205, 0.6)",
+            },
+            {
+                label: 'Signed Up',
+                data: [34, 72, 112, 90, 172, 152, 11],
+                backgroundColor: "rgba(255, 181, 107, 0.6)",
+            }
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+
+
+
+/***************
+PIE CHART
+***************/
+
+
+var doughnutChart = document.getElementById("pieChart");
+var myChart3 = new Chart(doughnutChart, {
+    type: 'doughnut',
+    data: {
+        labels: [
+            "Phones",
+            "Tablets",
+            "Desktop",
+            "PC",
+            "Apple"
+        ],
+        datasets: [{
+            data: [62, 45, 16, 23, 22],
+            backgroundColor: [
+                "rgb(115, 250, 121)",
+                "rgb(128, 255, 255)",
+                "rgb(96, 96, 205)",
+                "rgb(255, 202, 128)",
+                "rgb(230, 230, 255)",
+            ]
+          }]
+      },
+    options: { 
+      cutoutPercentage: 40
+  }
+});
 
 
 
