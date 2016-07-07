@@ -87,9 +87,36 @@ p.traffic {
 }
 
 #chart {
+	display: inline-block;
 	width: 95%;
-	height: auto;
+	height: 200px;
 }
+
+
+
+/***************
+BAR PIE CHART
+***************/
+
+#barChart_div,
+#pieChart_div {
+	@include mobile {
+		display: inline-block;
+		width: 90%;
+		padding: 20px;
+	}
+	@include tablet {
+		width: 49.7%;
+		border: 2px solid $light_grey;
+	}
+}
+
+#barChart,
+#pieChart {
+	height: 200px;
+}
+
+
 
 
 
