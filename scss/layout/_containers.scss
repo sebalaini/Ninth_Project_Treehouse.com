@@ -102,19 +102,16 @@ BAR PIE CHART
 #pieChart_div {
 	@include mobile {
 		display: inline-block;
-		width: 90%;
-		padding: 20px;
+		width: 95%;
+		float: left;
 	}
 	@include tablet {
+		padding: 20px;
 		width: 49.7%;
 		border: 2px solid $light_grey;
 	}
 }
 
-#barChart,
-#pieChart {
-	height: 200px;
-}
 
 
 

@@ -267,12 +267,12 @@ var myChart2 = new Chart(barChart, {
         datasets: [
             {
                 label: 'Visited',
-                data: [75, 100, 175, 125, 225, 211, 42],
+                data: [80, 100, 174, 125, 205, 221, 43],
                 backgroundColor: "rgba(96, 96, 205, 0.6)",
             },
             {
                 label: 'Signed Up',
-                data: [34, 72, 112, 90, 172, 152, 11],
+                data: [38, 67, 118, 96, 180, 168, 25],
                 backgroundColor: "rgba(255, 181, 107, 0.6)",
             }
         ]
@@ -294,7 +294,6 @@ var myChart2 = new Chart(barChart, {
 PIE CHART
 ***************/
 
-
 var doughnutChart = document.getElementById("pieChart");
 var myChart3 = new Chart(doughnutChart, {
     type: 'doughnut',
@@ -303,11 +302,11 @@ var myChart3 = new Chart(doughnutChart, {
             "Phones",
             "Tablets",
             "Desktop",
-            "PC",
-            "Apple"
+            "Linux",
+            "OS X"
         ],
         datasets: [{
-            data: [62, 45, 16, 23, 22],
+            data: [62, 40, 33, 23, 27],
             backgroundColor: [
                 "rgb(115, 250, 121)",
                 "rgb(128, 255, 255)",
@@ -318,7 +317,7 @@ var myChart3 = new Chart(doughnutChart, {
           }]
       },
     options: { 
-      cutoutPercentage: 40
+      cutoutPercentage: 40,
   }
 });
 
