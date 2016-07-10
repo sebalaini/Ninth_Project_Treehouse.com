@@ -302,8 +302,8 @@ var myChart3 = new Chart(doughnutChart, {
             "Phones",
             "Tablets",
             "Desktop",
-            "Linux",
-            "OS X"
+            "W. phone",
+            "IOS"
         ],
         datasets: [{
             data: [62, 40, 33, 23, 27],
