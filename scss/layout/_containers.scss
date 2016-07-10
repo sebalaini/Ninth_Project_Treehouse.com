@@ -141,6 +141,7 @@ SOCIAL DIV
 	}
 	@include tablet {
 		text-align: left;
+		padding-left: 20px;
 	}
 }
 
@@ -236,6 +237,100 @@ p.number {
 		font-size: 2em;
 	}
 }
+
+
+
+/***************
+MEMBERS DIV
+***************/
+
+.members_div {
+	@include mobile {
+		display: inline-block;
+		float: left;
+		margin: 5px 0 20px 0;
+		width: 95%;
+	}
+	@include tablet {
+		width: 49.7%;
+		border: 2px solid $light_grey;
+	}
+}
+
+.members_table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+caption {
+	text-align: left;
+	padding: 10px 0 20px 20px;;
+	padding-bottom: 20px;
+}
+
+tr {
+	width: 100%;
+	height: 75px;
+	padding: 10px 0;
+	border-bottom: 2px solid $light_grey;
+}
+
+.last {
+	@include mobile {
+		border-bottom: 2px solid $light_grey;
+	}
+	@include tablet {
+		border-bottom: none;
+	}
+}
+
+table a {
+	@include mobile {
+		color: $violet;
+		font-size: 0.8em;
+	}
+	@include mobile2 {
+		font-size: 1em;	
+	}
+}
+
+.member_name,
+td {
+	@include mobile {
+		font-size: 0.9em;
+	}
+	@include mobile2 {
+		font-size: 1em;
+	}
+}
+
+
+.member_icon {
+	@include mobile {
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+	}
+	@include mobile2 {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+
+/***************
+MEMBERS DIV
+***************/
+
+
+
+
+
+
+
+
+
+
 
 
 
