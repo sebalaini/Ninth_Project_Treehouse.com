@@ -57,7 +57,7 @@ LINEAR CHART
 
 .linear_chart {
 	width: 100%;
-	margin-top: 20px;
+	margin: 30px 0;
 	text-align: center;
 }
 
@@ -101,7 +101,7 @@ BAR PIE CHART
 #barChart_div,
 #pieChart_div {
 	@include mobile {
-		display: inline-block;
+		display: block;
 		width: 95%;
 		float: left;
 	}
@@ -112,6 +112,127 @@ BAR PIE CHART
 	}
 }
 
+p.dailyTraffic,
+p.mobileUsers {
+	@include mobile {
+		text-align: center;
+	}
+	@include tablet {
+		text-align: left;
+	}
+}
+
+
+
+/***************
+SOCIAL DIV
+***************/
+
+#social_div {
+	display: block;
+	width: 100%;
+	clear: both;
+	padding: 40px 0;
+}
+
+.social {
+	@include mobile {
+		text-align: center;
+	}
+	@include tablet {
+		text-align: left;
+	}
+}
+
+.social_ul {
+	@include mobile {
+		padding-left: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@include tablet {
+		padding-left: 40px;
+	}
+}
+
+.social_li {
+	@include mobile {
+		display: flex;
+		flex-wrap: wrap;
+		width: 75%;
+		height: 130px;
+		border-radius: 40px;
+		background: $light_grey;
+		margin: 10px;
+	}
+	@include tablet {
+		width: 40%;
+	}
+	@include desktop {
+		width: 31%;
+	}
+}
+
+svg {
+	display: block;
+	fill: $white;
+	width: 60px;
+}
+
+.social_div {
+	display: inline-block;
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
+	background: $violet;
+	position: relative;
+	top: 30px;
+	left: 10px;
+}
+
+#instagram {
+	position: relative;
+	top: 13px;
+	right: -3px;
+}
+
+circle {
+	fill: $violet;
+}
+
+.text {
+	@include mobile {
+		color: $violet;
+		display: inline-block;
+		width: 70%;
+		text-align: center;
+		font-size: 1em;
+		padding-left: 20px;
+		padding-top: 10px;
+		margin-bottom: 0;
+	}
+	@include tablet {
+		font-size: 2em;
+	}
+}
+
+p.number {
+	@include mobile {
+		color: $grey;
+		display: inline-block;
+		width: 70%;
+		margin-top: 5px;
+		text-align: center;
+		font-weight: normal;
+		margin: 0 auto;
+		padding-left: 20px;
+		font-size: 1.5em;
+	}
+	@include tablet {
+		font-size: 2em;
+	}
+}
 
 
 
