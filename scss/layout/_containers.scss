@@ -161,6 +161,7 @@ SOCIAL DIV
 	@include mobile {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		width: 95%;
 		height: 130px;
 		border-radius: 40px;
@@ -174,7 +175,7 @@ SOCIAL DIV
 		width: 40%;
 	}
 	@include desktop {
-		width: 31%;
+		width: 27%;
 	}
 }
 
@@ -209,32 +210,40 @@ circle {
 	@include mobile {
 		color: $violet;
 		display: inline-block;
-		width: 70%;
-		text-align: center;
+		width: 60%;
+		text-align: left;
 		font-size: 1em;
-		padding-left: 20px;
-		padding-top: 10px;
+		padding-left: 30px;
+		padding-top: 30px;
 		margin-bottom: 0;
 	}
-	@include tablet {
-		font-size: 2em;
+	@include mobile2 {
+		text-align: center;
+		font-size: 1.2em;
+		padding-top: 15px;
+	}
+	@include desktop {
+		text-align: left;
+		padding-left: 40px;
 	}
 }
 
-p.number {
+.number {
 	@include mobile {
 		color: $grey;
 		display: inline-block;
-		width: 70%;
 		margin-top: 5px;
-		text-align: center;
+		text-align: left;
 		font-weight: normal;
 		margin: 0 auto;
-		padding-left: 20px;
 		font-size: 1.5em;
 	}
-	@include tablet {
+	@include mobile2 {
+		text-align: center;
 		font-size: 2em;
+	}
+	@include desktop {
+		text-align: left;
 	}
 }
 
