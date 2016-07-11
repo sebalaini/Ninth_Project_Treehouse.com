@@ -241,10 +241,11 @@ p.number {
 
 
 /***************
-MEMBERS DIV
+MEMBERS DIV AND ACTIVITY
 ***************/
 
-.members_div {
+.members_div,
+.activity_div {
 	@include mobile {
 		display: inline-block;
 		float: left;
@@ -257,7 +258,8 @@ MEMBERS DIV
 	}
 }
 
-.members_table {
+.members_table,
+.activity_table {
 	border-collapse: collapse;
 	width: 100%;
 }
@@ -295,6 +297,7 @@ table a {
 }
 
 .member_name,
+.activity_time,
 td {
 	@include mobile {
 		font-size: 0.9em;
@@ -324,7 +327,22 @@ MEMBERS DIV
 
 
 
+.social_member {
+	background: $violet;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+	margin-right: 12px;
+}
 
+.social_cell {
+	@include mobile {
+		display: none;
+	}
+	@include tablet {
+		display: table-cell;
+	}
+}
 
 
 
