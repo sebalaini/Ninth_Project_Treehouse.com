@@ -3,9 +3,7 @@ SEARCH
 ***************/
 
 .search {
-	display: inline-block;
 	margin-top: 50px;
-	width: 100%;
 }
 
 .search h1 {
@@ -93,7 +91,6 @@ p.traffic {
 }
 
 #chart {
-	display: inline-block;
 	width: 95%;
 	height: 200px;
 }
@@ -106,8 +103,6 @@ BAR / PIE CHART
 
 .barpie_chart {
 	@include mobile {
-		display: inline-block;
-		width: 100%;
 		border: none;
 	}
 	@include tablet {
@@ -157,7 +152,6 @@ SOCIAL DIV
 
 #social_div {
 	display: block;
-	width: 100%;
 	clear: both;
 	padding: 30px 0;
 }
@@ -215,7 +209,6 @@ svg {
 }
 
 .social_div {
-	display: inline-block;
 	height: 65px;
 	width: 65px;
 	border-radius: 100%;
@@ -285,13 +278,12 @@ MEMBERS DIV AND ACTIVITY
 .members {
 	@include mobile {
 		border: none;
+		margin-bottom: 20px;
 	}
 	@include tablet {
-		display: inline-block;
-		width: 100%;
 		border-top: 2px solid $light_grey;
 		border-bottom: 2px solid $light_grey;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
 }
 
@@ -307,7 +299,6 @@ MEMBERS DIV AND ACTIVITY
 .members_div,
 .activity_div {
 	@include mobile {
-		display: inline-block;
 		float: left;
 		margin: 0;
 		width: 95%;
@@ -315,6 +306,15 @@ MEMBERS DIV AND ACTIVITY
 	@include tablet {
 		width: 49.9%;
 		padding: 0 20px;
+	}
+}
+
+.activity_div {
+	@include mobile {
+		padding-top: 30px;
+	}
+	@include tablet {
+		padding-top: 0;
 	}
 }
 
@@ -397,10 +397,107 @@ td {
 }
 
 
+/***************
+FORM DIV AND SETTING
+***************/
+
+.form_div,
+.settings_div {
+	@include mobile {
+		float: left;
+		margin: 0;
+		width: 95%;
+	}
+	@include tablet {
+		width: 49.9%;
+		padding: 0 20px 20px 20px;
+	}
+}
+
+.form_div {
+	@include tablet {
+		border-right: 2px solid $light_grey;
+	}
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+input[class="search_member"] {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: 2px solid $light_grey;
+	margin: 10px;
+	margin-left: 5px;
+}
+
+textarea {
+	width: 100%;
+	height: 80px;
+	border-radius: 5px;
+	border: 2px solid $light_grey;
+	margin: 10px;
+	margin-left: 5px;
+}
 
 
+.settings {
+	padding: 5px 0 10px 20px;
+	margin: 0;
+}
 
+.send_email,
+.set_profile {
+	@include mobile {
+		display: inline-block;
+		width: 68%;
+		float: left;
+		padding-left: 10px;
+	}
+	@include tablet {
+		width: 50%;
+	}
+}
 
+.message_set,
+.public {
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.timezone_div {
+	@include mobile {
+		margin-left: 4%;
+		margin-top: 10px;
+	}
+	@include tablet {
+		margin-left: 2%;
+	}
+}
+
+.timezone {
+	width: 95%;
+	height: 30px;
+	border: 2px solid $light_grey;
+}
+
+.button_div {
+	@include mobile {
+		margin-top: 18px;
+		padding-left: 10%;
+	}
+	@include tablet {
+		padding-left: 15;
+	}
+}
 
 
 
