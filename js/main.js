@@ -327,17 +327,7 @@ var myChart3 = new Chart(doughnutChart, {
 MESSAGE USER
 ***************/
 
-$ ( function() {
-  var memberComplete = [
-    "Anneke Lieve", 
-    "Martin Kylian", 
-    "Shun Xiulan", 
-    "Finley Malcolm"
-  ];
 
-  $( ".search_member" ).autocomplete({
-    source: memberComplete });
-} );
 
 
 
