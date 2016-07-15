@@ -49,6 +49,12 @@ MESSAGE USER
 	width: 40%;
 }
 
+#send:hover,
+#save:hover,
+#cancel:hover {
+	background: $grey;
+}
+
 
 
 /***************

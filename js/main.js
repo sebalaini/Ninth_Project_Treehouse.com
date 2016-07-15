@@ -2,6 +2,13 @@
 VAR
 ***************/
 
+var $close = $('.close');
+var $close1 = $('.close_1');
+var $close2 = $('.close_2');
+var $info = $('.alert_info');
+var $info1 = $('.info_1');
+var $info2 = $('.info_2');
+
 var $hourly = $('#hourly');
 var $daily = $('#daily');
 var $weekly = $('#weekly');
@@ -10,6 +17,20 @@ var $hourlyChart = $('#lineChart_hourly');
 var $dailyChart = $('#lineChart_daily');
 var $weeklyChart = $('#lineChart_weekly');
 var $monthlyChart = $('#lineChart_monthly');
+
+
+
+/***************
+ALERT FUNCTION
+***************/
+
+$(document).ready(function(){
+  $info.show();
+});
+
+$close.click("on", function(){
+  $info.hide();
+});
 
 
 
