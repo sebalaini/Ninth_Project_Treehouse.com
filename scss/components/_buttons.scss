@@ -30,6 +30,28 @@ button.selected {
 
 
 /***************
+ALERT
+***************/
+
+.close {
+	margin-top: 3px;
+	margin-right: 5px;
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+
+.close:hover {
+	background: $light_violet;
+	border: none;
+}
+
+.close img {
+	width: 20px;
+	height: 20px;
+}
+
+/***************
 MESSAGE USER
 ***************/
 
