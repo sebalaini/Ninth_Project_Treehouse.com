@@ -25,7 +25,7 @@ LOGO
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	@include tablet {
+	@include mobile2 {
 		font-size: 1.6em;
 	}
 }
@@ -35,7 +35,7 @@ LOGO
 		font-size: 0.7em;
 		font-weight: light;
 	}
-	@include tablet {
+	@include mobile2 {
 		font-size: 1em;	
 	}
 }
@@ -68,6 +68,33 @@ li.name {
 	}
 	@include tablet{
 		padding-left: 20px;
+	}
+}
+
+
+
+/***************
+ALERT DIV
+***************/
+
+.alert {
+	@include mobile {
+		font-size: 0.7em
+	}
+	@include mobile2 {
+		font-size: 1em;
+	}
+}
+
+.alert_p {
+	@include mobile {
+		display: inline-block;
+		position: relative;
+		top: -3px;
+		color: $white;
+	}
+	@include mobile2 {
+		top: -10px
 	}
 }
 
@@ -166,8 +193,29 @@ SOCIAL DIV
 
 
 /***************
-ACTIVITY LOG
+MEMBERS AND ACTIVITY DIV
 ***************/
+
+table a {
+	@include mobile {
+		color: $violet;
+		font-size: 0.8em;
+	}
+	@include mobile2 {
+		font-size: 1em;	
+	}
+}
+
+.member_name,
+.activity_time,
+td {
+	@include mobile {
+		font-size: 0.9em;
+	}
+	@include mobile2 {
+		font-size: 1em;
+	}
+}
 
 .arrow {
 	font-size: 2em;

@@ -17,17 +17,17 @@
         
       <ul class="main_nav">
         <li class="notifications"><a href="#"></a></li>
-        <li class="profile"><a href=""></a></li>
+        <li class="profile"><a></a></li>
         <li class="name">Sebastiano Laini</li>
       </ul>
   </header>
   
      
     <ul class="left_nav">
-      <li class="active dashboard"><a href="#"></a></li>
-      <li class="members"><a href="#"></a></li>
-      <li class="visits"><a href="#"></a></li>
-      <li class="settings"><a href="#"></a></li>
+      <li class="active dashboard"><a href="index.html"></a></li>
+      <li class="members"><a href=""></a></li>
+      <li class="visits"><a href=""></a></li>
+      <li class="settings"><a href=""></a></li>
     </ul>
   
   <main>
@@ -43,6 +43,22 @@
     </div>   
   </div>
 
+  <div class="alert_div">
+    
+    <div class="alert alert_info">
+      <p class="alert_p"><strong>Info.</strong> There are new notifications.</p><a class="close" href=""><img src="img/x.png"></a>
+    </div>
+
+    <div class="alert info_1">
+      <p class="alert_p"><strong>Info.</strong> There are new Members.</p><a class="close_1" href=""><img src="img/x.png"></a>
+    </div>
+
+    <div class="alert info_2">
+      <p class="alert_p"><strong>Info.</strong> There are new members activity.</p><a class="close_2" href=""><img src="img/x.png"></a>
+    </div>
+
+  </div>
+  
   <div class="linear_chart">
     <p class="traffic">TRAFFIC</p> 
       <div class="btn_div">
@@ -125,7 +141,7 @@
     </ul>
   </div>
 
-<div class="members">  
+<div id="members">  
   <div class="members_div">
 
      <table class="members_table">
@@ -316,13 +332,15 @@
             <button id="cancel" type="button">CANCEL</button>
             
           </div>
-      
+
+    </div>
+  </main>
 </div>
 
-  </main>
-  </div>
     <script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>  
+
   </body>
 </html>
