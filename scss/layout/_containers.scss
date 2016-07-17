@@ -7,6 +7,18 @@ ALERT
 	text-align: center;
 }
 
+.not_circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background: $light_green;
+	display: inherit;
+	position:relative;
+	top: -32px;
+	left: 34px;
+}
+
+
 
 /***************
 SEARCH

@@ -13,10 +13,10 @@
   <div id="wrapper">
      
   <header>
-    <a class="logo" href="index.html"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
+    <a class="logo"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
         
       <ul class="main_nav">
-        <li class="notifications"><a href="#"></a></li>
+        <li class="notifications"> <a> <button type="button" class="not_btn"> </button> <div class="not_circle"> </div> </a></li>
         <li class="profile"><a></a></li>
         <li class="name">Sebastiano Laini</li>
       </ul>
@@ -50,14 +50,14 @@
         <button type="button" class="close"> <img src="img/x.png"> </button>
     </div>
 
-    <div class="alert info_1">
+    <div class="alert" id="info_1">
       <p class="alert_p"><strong>Info.</strong> There are new Members.</p>
-        <button type="button" class="close"> <img src="img/x.png"> </button>
+        <button type="button" class="close" id="close_1"> <img src="img/x.png"> </button>
     </div>
 
-    <div class="alert info_2">
+    <div class="alert" id="info_2">
       <p class="alert_p"><strong>Info.</strong> There are new members activity.</p> 
-        <button type="button" class="close"> <img src="img/x.png"> </button>
+        <button type="button" class="close" id="close_2"> <img src="img/x.png"> </button>
     </div>
 
   </div>
@@ -65,10 +65,10 @@
   <div class="linear_chart">
     <p class="traffic">TRAFFIC</p> 
       <div class="btn_div">
-        <button type="button" id="hourly">Hourly</button>
-        <button type="button" id="daily">Daily</button>
-        <button type="button" id="weekly">Weekly</button>
-        <button type="button" id="monthly">Monthly</button>
+        <button type="button" class="chart_btn" id="hourly">Hourly</button>
+        <button type="button" class="chart_btn" id="daily">Daily</button>
+        <button type="button" class="chart_btn" id="weekly">Weekly</button>
+        <button type="button" class="chart_btn" id="monthly">Monthly</button>
       </div>
 
   <div id="chart" >

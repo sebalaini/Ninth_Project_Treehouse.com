@@ -2,12 +2,14 @@
 VAR
 ***************/
 
+var $not_btn = $('.not_btn');
 var $close = $('.close');
-var $close1 = $('.close_1');
-var $close2 = $('.close_2');
+var $close1 = $('#close_1');
+var $close2 = $('#close_2');
 var $info = $('.alert_info');
-var $info1 = $('.info_1');
-var $info2 = $('.info_2');
+var $info1 = $('#info_1');
+var $info2 = $('#info_2');
+var $not_circle = $('.not_circle');
 
 var $hourly = $('#hourly');
 var $daily = $('#daily');
@@ -24,12 +26,26 @@ var $monthlyChart = $('#lineChart_monthly');
 ALERT FUNCTION
 ***************/
 
+$not_btn.click("on", function(){
+  $info1.show();
+  $info2.show();
+  $not_circle.hide();
+});
+
 $(document).ready(function(){
   $info.show();
 });
 
 $close.click("on", function(){
   $info.hide();
+});
+
+$close1.click("on", function(){
+  $info1.hide();
+});
+
+$close2.click("on", function(){
+  $info2.hide();
 });
 
 
