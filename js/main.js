@@ -364,8 +364,10 @@ var myChart3 = new Chart(doughnutChart, {
 MESSAGE USER
 ***************/
 
-
-
+a1 = $('#query').autocomplete({
+  delimiter: /(,|;)\s*/,
+    lookup: 'Anneke Lieve, Martin Kylian, Shun Xiulan, Finley Malcolm,'.split(',')
+}); 
 
 
 

@@ -16,7 +16,7 @@
     <a class="logo"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
         
       <ul class="main_nav">
-        <li class="notifications"> <a> <button type="button" class="not_btn"> </button> <div class="not_circle"> </div> </a></li>
+        <li class="notifications"><a> <button type="button" class="not_btn"> </button> <div class="not_circle"> </div> </a></li>
         <li class="profile"><a></a></li>
         <li class="name">Sebastiano Laini</li>
       </ul>
@@ -275,7 +275,7 @@
         <legend>MESSAGE USER</legend>
           
           <label for="contact_name"></label>
-            <input type="search" class="search_member" id="contact_name" name="search_member" value="" placeholder="Search for User">
+            <input type="text" class="search_member text-field valid" id="query" autocomplete="off" name="search_member" value="" placeholder="Search for User">
                 
           <label for="contact_message"></label>
             <textarea class="user_message" id="contact_message" name="message" placeholder="Message for User"></textarea>
@@ -341,7 +341,7 @@
 </div>
 
     <script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8"></script>  
 
