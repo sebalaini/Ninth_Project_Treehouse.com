@@ -11,6 +11,10 @@ var $info1 = $('#info_1');
 var $info2 = $('#info_2');
 var $not_circle = $('.not_circle');
 
+var $members = $('.members');
+var $visits = $('.visits');
+var $settings = $('.settings');
+
 var $hourly = $('#hourly');
 var $daily = $('#daily');
 var $weekly = $('#weekly');
@@ -27,6 +31,7 @@ ALERT FUNCTION
 ***************/
 
 $not_btn.click("on", function(){
+  event.preventDefault();
   $info1.show();
   $info2.show();
   $not_circle.hide();
@@ -60,6 +65,24 @@ $(document).ready(function() {
   $dailyChart.hide();
   $weeklyChart.hide();
   $monthlyChart.hide();
+});
+
+
+
+/***************
+PREVENT DEFAULT LEFT NAV
+***************/
+
+$members.click("on", function(){
+  event.preventDefault();
+});
+
+$visits.click("on", function(){
+  event.preventDefault();
+});
+
+$settings.click("on", function(){
+  event.preventDefault();
 });
 
 
