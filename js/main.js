@@ -364,10 +364,21 @@ var myChart3 = new Chart(doughnutChart, {
 MESSAGE USER
 ***************/
 
-a1 = $('#query').autocomplete({
+AutoComplete = $('#query').autocomplete({
   delimiter: /(,|;)\s*/,
     lookup: 'Anneke Lieve, Martin Kylian, Shun Xiulan, Finley Malcolm,'.split(',')
 }); 
+
+
+$( ".send" ).submit(function( event ) {
+  if ( $( "input:first" ).val() === "correct" ) {
+    $( ".error_span" ).text( "Validated..." ).show();
+    return;
+  }
+ 
+  $( ".error" ).text( "Not valid!" ).show().fadeOut( 2000 );
+  event.preventDefault();
+});
 
 
 
