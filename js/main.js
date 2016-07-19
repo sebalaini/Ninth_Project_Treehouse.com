@@ -398,27 +398,25 @@ $('#send').click(function(){
   error = false;
   errorMsg = '';
   
-  if($('#search_member').val() == ''){
+  if($('#search_member').val() === ''){
     error = true;
-    errorMsg += 'Por favor, indica un usuario. ';
+    errorMsg += 'Please, add a member. ';
   }
-  if($('#contact_message').val() == ''){
+  if($('#contact_message').val() === ''){
     error = true;
-    errorMsg += 'Por favor, escribe un mensaje';
+    errorMsg += 'Please, type a text';
   }
-  
   if(error){
     $('.error .error_span').text(errorMsg);
   }else{
-    $('.error .error_span').text('Mensaje enviado');
+    $('.error .error_span').text('Message send');
   }
   
   $('.error').slideDown(function(){
       window.setTimeout(function(){
         $('.error').fadeOut();
       }, 2000);
-    });
-  
+    });  
 });
 
 
