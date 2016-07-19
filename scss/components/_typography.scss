@@ -243,3 +243,18 @@ p.setting {
 	}
 }
 
+.error_span {
+	@include mobile {
+		font-size: 0.9em;
+		position: relative;
+		top: 10px;
+	}
+	@include mobile2 {
+		font-size: 1em;
+	}
+}
+
+
+
+
+

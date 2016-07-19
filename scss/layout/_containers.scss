@@ -423,6 +423,20 @@ textarea:focus {
 	@extend .focus;
 }
 
+.error {
+	display: none;
+	margin-left: 10px;
+	width: 98%;
+	height: 40px;
+	background: $light_violet;
+	position: relative;
+	z-index: 100;
+	top: -160px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
 .send_email,
 .set_profile {
 	@include mobile {
