@@ -33,7 +33,7 @@ LOGO
 .light {
 	@include mobile {
 		font-size: 0.7em;
-		font-weight: light;
+		font-weight: normal;
 	}
 	@include mobile2 {
 		font-size: 1em;	
