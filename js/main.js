@@ -364,26 +364,86 @@ var myChart3 = new Chart(doughnutChart, {
 MESSAGE USER
 ***************/
 
-AutoComplete = $('#query').autocomplete({
+AutoComplete = $('#search_member').autocomplete({
   delimiter: /(,|;)\s*/,
     lookup: 'Anneke Lieve, Martin Kylian, Shun Xiulan, Finley Malcolm,'.split(',')
 }); 
 
 
-$( ".send" ).submit(function( event ) {
-  if ( $( "input:first" ).val() === "correct" ) {
-    $( ".error_span" ).text( "Validated..." ).show();
-    return;
+$('#send').click(function(){
+  // fields validator
+  error = false;
+  errorMsg = '';
+  
+  if($('#search_member').val() == ''){
+    error = true;
+    errorMsg += 'Por favor, indica un usuario. ';
   }
- 
-  $( ".error" ).text( "Not valid!" ).show().fadeOut( 2000 );
-  event.preventDefault();
+  if($('#contact_message').val() == ''){
+    error = true;
+    errorMsg += 'Por favor, escribe un mensaje';
+  }
+  
+  if(error){
+    $('.error .error_span').text(errorMsg);
+  }else{
+    $('.error .error_span').text('Mensaje enviado');
+  }
+  
+  $('.error').slideDown(function(){
+      window.setTimeout(function(){
+        $('.error').fadeOut();
+      }, 2000);
+    });
+  
 });
 
 
+// SETTINGS
 
+$('document').ready(function() {
+  // set default settings
+  if(!localStorage.hasOwnProperty('email')){
+    localStorage.setItem('email', 'true');
+  }
+  
+  if(!localStorage.hasOwnProperty('profile')){
+    localStorage.setItem('profile','true');
+  }
+  
+  if(!localStorage.hasOwnProperty('timezone')){
+    localStorage.setItem('timezone', '0');
+  }
+  
+  setSettings()
+})
 
+$('#save').click(function(){
+  localStorage.setItem('email', $('#onoffswitch').prop('checked'));
+  localStorage.setItem('profile', $('#onoffswitch2').prop('checked'));
+  localStorage.setItem('timezone', $('.timezone').val());
+});
 
+$('#cancel').click(function(){
+  setSettings()
+});
+
+function setSettings(){
+  if(localStorage.email == "false") {
+    $('#onoffswitch').prop('checked', false);
+  }else{
+    $('#onoffswitch').prop('checked', true);
+  }
+  
+  if(localStorage.profile == "false") {
+    $('#onoffswitch2').prop('checked', false);
+  }else{
+    $('#onoffswitch2').prop('checked', true);
+  }
+  
+  $('.timezone').val(localStorage.timezone);
+  
+}
 
 
 
