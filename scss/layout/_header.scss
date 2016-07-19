@@ -50,8 +50,6 @@ NAV
 	}
 	li a {
 		display: block;
-		flex-direction: row;
-		flex-wrap: nowrap;
 		width: 30px;
 		height: 30px;
 	}
@@ -102,18 +100,31 @@ LEFT NAV
 	padding-left: 0;
 }
 
-.left_nav	li {
-	position: relative;
-	left: 5px;
-	top: 35px;
-	height: 35px;
-	width: 35px;
-	margin: 30px auto;
+.left_nav	{
+	li {
+		position: relative;
+		left: 10px;
+		top: 35px;
+		height: 35px;
+		width: 35px;
+		margin: 30px auto;
+	}
+	li a {
+		width: 42px;
+		height: 34px;
+	}
 }
 
 .left_nav li:hover {
-	width: 53px;
-	border-left: 6px solid $green;
+	width: 50px;
+	left: 3px;
+	border-left: 3px solid $green;
+}
+
+#active {
+	width: 50px;
+	left: 3px;
+	border-left: 3px solid $green;
 }
 
 .dashboard {
