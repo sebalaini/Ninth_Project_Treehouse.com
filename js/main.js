@@ -415,8 +415,8 @@ $('document').ready(function() {
     localStorage.setItem('timezone', '0');
   }
   
-  setSettings()
-})
+  setSettings();
+});
 
 $('#save').click(function(){
   localStorage.setItem('email', $('#onoffswitch').prop('checked'));
@@ -425,7 +425,7 @@ $('#save').click(function(){
 });
 
 $('#cancel').click(function(){
-  setSettings()
+  setSettings();
 });
 
 function setSettings(){
