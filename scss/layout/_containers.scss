@@ -424,19 +424,23 @@ textarea:focus {
 }
 
 .error {
-	display: none;
-	color: $white;
-	margin-left: 10px;
-	width: 98%;
-	height: 40px;
-	background: $light_violet;
-	position: relative;
-	z-index: 100;
-	top: -160px;
-	border-radius: 10px;
-	text-align: center;
+	@include mobile {
+		display: none;
+		color: $white;
+		margin-left: 10px;
+		width: 98%;
+		height: 55px;
+		background: $light_violet;
+		position: relative;
+		z-index: 100;
+		top: -160px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	@include mobile2 {
+		height: 40px;
+	}
 }
-
 
 .send_email,
 .set_profile {

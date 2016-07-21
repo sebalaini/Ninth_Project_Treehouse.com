@@ -409,7 +409,7 @@ $('#send').click(function(){
   if(error){
     $('.error .error_span').text(errorMsg);
   }else{
-    $('.error .error_span').text('Message send');
+    $('.error .error_span').text('Message sent');
   }
   
   $('.error').slideDown(function(){
