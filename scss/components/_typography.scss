@@ -25,7 +25,7 @@ LOGO
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1.6em;
 	}
 }
@@ -35,7 +35,7 @@ LOGO
 		font-size: 0.7em;
 		font-weight: normal;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;	
 	}
 }
@@ -50,7 +50,7 @@ li.name {
 	@include mobile {
 		font-size: 0.8em;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;
 	}
 }
@@ -62,7 +62,7 @@ li.name {
 		padding-left: 10px;
 		margin-top: 30px;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		padding-left: 25px;
 		font-size: 1.5em;
 	}
@@ -81,7 +81,7 @@ ALERT DIV
 	@include mobile {
 		font-size: 0.7em
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;
 	}
 }
@@ -160,7 +160,7 @@ SOCIAL DIV
 		padding-top: 30px;
 		margin-bottom: 0;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		text-align: center;
 		font-size: 1.2em;
 		padding-top: 15px;
@@ -181,7 +181,7 @@ SOCIAL DIV
 		margin: 0 auto;
 		font-size: 1.5em;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		text-align: center;
 		font-size: 2em;
 	}
@@ -201,7 +201,7 @@ table a {
 		color: $violet;
 		font-size: 0.8em;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;	
 	}
 }
@@ -212,7 +212,7 @@ td {
 	@include mobile {
 		font-size: 0.9em;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;
 	}
 }
@@ -249,7 +249,7 @@ p.setting {
 		position: relative;
 		top: 10px;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		font-size: 1em;
 	}
 }
