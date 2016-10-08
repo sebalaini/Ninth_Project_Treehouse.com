@@ -190,7 +190,7 @@ SOCIAL DIV
 		background: $light_grey;
 		margin: 10px;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		width: 75%;
 		margin-left: 10%;
 	}
@@ -437,7 +437,7 @@ textarea:focus {
 		border-radius: 10px;
 		text-align: center;
 	}
-	@include mobile2 {
+	@include mobile3 {
 		height: 40px;
 	}
 }
